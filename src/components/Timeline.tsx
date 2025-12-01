@@ -10,6 +10,13 @@ interface TimelineEvent {
   video?: string; // opcional: use para vídeos (mp4) no card de mídia
 }
 
+// Helper para montar caminhos públicos (usa BASE_URL e faz encode)
+const asset = (path: string) => {
+  const base = import.meta.env.BASE_URL || "/";
+  const trimmedBase = base.endsWith("/") ? base.slice(0, -1) : base;
+  return encodeURI(`${trimmedBase}/${path}`);
+};
+
 const events: TimelineEvent[] = [
   {
     id: 1,
@@ -17,8 +24,8 @@ const events: TimelineEvent[] = [
     title: "O reencontro",
     description: "Aquele instante em que tudo começou a fazer sentido. Meu coração soube na hora.",
     icon: "star",
-    image: "",
-    video: "public/fotos/VID-20210308-WA0046.mp4", // opcional: defina um .mp4 aqui para usar vídeo neste card
+    image: asset("fotos/958daa7e-20f6-4f49-95c2-9938bd68b167.jpg"),
+    video: asset("fotos/VID-20210308-WA0046.mp4"), // opcional: defina um .mp4 aqui para usar vídeo neste card
   },
   {
     id: 2,
@@ -26,7 +33,7 @@ const events: TimelineEvent[] = [
     title: "Franguinha",
     description: "Descobrimos que o tempo voa quando estamos juntos — e que o sorriso certo acalma qualquer medo.",
     icon: "calendar",
-    image: "public/8c7e2bc4-3b55-4ae0-ad2c-4fad6960b591.jpg",
+    image: asset("fotos/IMG_1243.jpg"),
   },
   {
     id: 3,
@@ -34,7 +41,7 @@ const events: TimelineEvent[] = [
     title: "Refúgio preferido",
     description: "Nosso canto seguro, onde as conversas são longas e o silêncio é confortável.",
     icon: "mapPin",
-    image: "public/fotos/958daa7e-20f6-4f49-95c2-9938bd68b167.jpg",
+    image: asset("fotos/IMG_1759.jpg"),
   },
   {
     id: 4,
@@ -42,7 +49,7 @@ const events: TimelineEvent[] = [
     title: "Amor em construção",
     description: "Seguimos colecionando memórias e sonhando o que ainda vamos viver. Sempre, eu e você.",
     icon: "heart",
-    image: "public/fotos/Imagem do WhatsApp de 2025-12-01 à(s) 16.18.15_29d16697.jpg",
+    image: asset("fotos/1e2d98fe-3d0f-40a5-85a0-df78eca3dcdc.jpg"),
   },
 ];
 
