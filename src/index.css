@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=DM+Sans:wght@400;500;600;700&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -6,104 +6,108 @@
 
 @layer base {
   :root {
-    --background: 255 32% 6%;
-    --foreground: 320 35% 96%;
+    --background: 270 45% 6%;
+    --foreground: 330 40% 96%;
 
-    --card: 255 30% 10%;
-    --card-foreground: 320 35% 96%;
+    --card: 268 38% 10%;
+    --card-foreground: 330 40% 96%;
 
-    --popover: 255 30% 9%;
-    --popover-foreground: 320 35% 96%;
+    --popover: 268 38% 10%;
+    --popover-foreground: 330 40% 96%;
 
-    --primary: 335 85% 63%;
-    --primary-foreground: 255 32% 6%;
+    --primary: 334 85% 62%;
+    --primary-foreground: 260 45% 10%;
 
-    --secondary: 250 28% 16%;
-    --secondary-foreground: 320 30% 90%;
+    --secondary: 250 36% 16%;
+    --secondary-foreground: 330 35% 94%;
 
-    --muted: 255 25% 18%;
-    --muted-foreground: 270 20% 70%;
+    --muted: 250 28% 22%;
+    --muted-foreground: 270 22% 75%;
 
-    --accent: 200 90% 60%;
-    --accent-foreground: 220 30% 10%;
+    --accent: 278 78% 65%;
+    --accent-foreground: 255 45% 12%;
 
-    --destructive: 0 72% 50%;
-    --destructive-foreground: 320 35% 96%;
+    --destructive: 355 80% 58%;
+    --destructive-foreground: 330 40% 96%;
 
-    --border: 255 22% 18%;
-    --input: 255 22% 20%;
-    --ring: 335 85% 63%;
+    --border: 258 32% 26%;
+    --input: 258 32% 24%;
+    --ring: 334 85% 62%;
 
-    --radius: 1rem;
+    --radius: 1.25rem;
 
     /* Custom romantic colors */
-    --rose-soft: 330 55% 28%;
-    --rose-medium: 330 70% 40%;
-    --rose-deep: 335 80% 55%;
-    --blush: 320 25% 15%;
-    --heart-red: 335 82% 58%;
-    --cream: 45 35% 88%;
-    --gold-soft: 40 90% 58%;
+    --rose-soft: 332 65% 30%;
+    --rose-medium: 332 70% 40%;
+    --rose-deep: 336 80% 55%;
+    --blush: 320 30% 18%;
+    --heart-red: 338 84% 60%;
+    --cream: 40 35% 90%;
+    --gold-soft: 45 85% 60%;
 
     /* Gradients */
-    --gradient-romantic: linear-gradient(135deg, hsl(255 32% 8%), hsl(280 30% 10%), hsl(320 32% 12%));
-    --gradient-heart: linear-gradient(135deg, hsl(335 85% 63%), hsl(200 90% 60%));
-    --gradient-hero: radial-gradient(circle at 20% 20%, hsl(335 70% 35% / 0.45), transparent 32%), radial-gradient(circle at 80% 10%, hsl(200 90% 45% / 0.35), transparent 32%), linear-gradient(180deg, hsl(255 32% 8%) 0%, hsl(265 28% 8%) 40%, hsl(285 30% 10%) 100%);
+    --gradient-romantic: linear-gradient(180deg, hsl(270 45% 7%), hsl(286 35% 10%), hsl(318 35% 12%));
+    --gradient-heart: linear-gradient(120deg, hsl(334 85% 62%), hsl(278 75% 65%), hsl(200 80% 62%));
+    --gradient-hero: radial-gradient(circle at 18% 22%, hsl(334 75% 38% / 0.55), transparent 30%), radial-gradient(circle at 82% 15%, hsl(278 75% 48% / 0.45), transparent 32%), linear-gradient(180deg, hsl(270 45% 7%) 0%, hsl(285 35% 10%) 45%, hsl(320 35% 12%) 100%);
 
-    --sidebar-background: 255 32% 8%;
-    --sidebar-foreground: 320 35% 94%;
-    --sidebar-primary: 335 85% 63%;
-    --sidebar-primary-foreground: 255 32% 6%;
-    --sidebar-accent: 255 24% 12%;
-    --sidebar-accent-foreground: 320 30% 92%;
-    --sidebar-border: 255 22% 18%;
-    --sidebar-ring: 335 85% 63%;
+    --sidebar-background: 268 38% 10%;
+    --sidebar-foreground: 330 40% 96%;
+    --sidebar-primary: 334 85% 62%;
+    --sidebar-primary-foreground: 260 45% 10%;
+    --sidebar-accent: 255 30% 14%;
+    --sidebar-accent-foreground: 330 40% 94%;
+    --sidebar-border: 258 32% 26%;
+    --sidebar-ring: 334 85% 62%;
   }
 
   .dark {
-    --background: 255 32% 5%;
-    --foreground: 320 35% 96%;
+    --background: 270 45% 5%;
+    --foreground: 330 40% 96%;
 
-    --card: 255 30% 9%;
-    --card-foreground: 320 35% 96%;
+    --card: 268 38% 9%;
+    --card-foreground: 330 40% 96%;
 
-    --popover: 255 30% 9%;
-    --popover-foreground: 320 35% 96%;
+    --popover: 268 38% 9%;
+    --popover-foreground: 330 40% 96%;
 
-    --primary: 335 85% 60%;
-    --primary-foreground: 255 32% 5%;
+    --primary: 334 85% 60%;
+    --primary-foreground: 260 45% 10%;
 
-    --secondary: 250 30% 14%;
-    --secondary-foreground: 320 30% 90%;
+    --secondary: 250 34% 14%;
+    --secondary-foreground: 330 35% 94%;
 
-    --muted: 255 25% 18%;
-    --muted-foreground: 270 20% 70%;
+    --muted: 250 28% 20%;
+    --muted-foreground: 270 22% 75%;
 
-    --accent: 200 90% 58%;
-    --accent-foreground: 220 30% 10%;
+    --accent: 278 78% 63%;
+    --accent-foreground: 255 45% 12%;
 
-    --destructive: 0 72% 48%;
-    --destructive-foreground: 320 35% 96%;
+    --destructive: 355 80% 56%;
+    --destructive-foreground: 330 40% 96%;
 
-    --border: 255 22% 18%;
-    --input: 255 22% 20%;
-    --ring: 335 85% 60%;
+    --border: 258 32% 24%;
+    --input: 258 32% 22%;
+    --ring: 334 85% 60%;
 
-    --rose-soft: 330 55% 26%;
-    --rose-medium: 330 70% 38%;
-    --rose-deep: 335 80% 54%;
-    --blush: 320 25% 12%;
-    --heart-red: 335 82% 55%;
-    --cream: 45 35% 86%;
-    --gold-soft: 40 90% 55%;
+    --rose-soft: 332 65% 28%;
+    --rose-medium: 332 70% 38%;
+    --rose-deep: 336 78% 52%;
+    --blush: 320 30% 15%;
+    --heart-red: 338 84% 58%;
+    --cream: 40 35% 88%;
+    --gold-soft: 45 85% 58%;
 
-    --gradient-romantic: linear-gradient(135deg, hsl(255 32% 7%), hsl(280 30% 9%), hsl(320 32% 11%));
-    --gradient-heart: linear-gradient(135deg, hsl(335 85% 60%), hsl(200 90% 58%));
-    --gradient-hero: radial-gradient(circle at 15% 25%, hsl(335 70% 32% / 0.45), transparent 30%), radial-gradient(circle at 80% 15%, hsl(200 90% 42% / 0.35), transparent 32%), linear-gradient(180deg, hsl(255 32% 7%) 0%, hsl(265 28% 8%) 40%, hsl(285 30% 10%) 100%);
+    --gradient-romantic: linear-gradient(180deg, hsl(270 45% 6%), hsl(286 35% 9%), hsl(318 35% 11%));
+    --gradient-heart: linear-gradient(120deg, hsl(334 85% 60%), hsl(278 75% 63%), hsl(200 80% 60%));
+    --gradient-hero: radial-gradient(circle at 14% 26%, hsl(334 70% 34% / 0.55), transparent 32%), radial-gradient(circle at 86% 18%, hsl(278 70% 46% / 0.45), transparent 32%), linear-gradient(180deg, hsl(270 45% 6%) 0%, hsl(285 35% 9%) 45%, hsl(320 35% 11%) 100%);
   }
 }
 
 @layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
   * {
     @apply border-border;
   }
@@ -124,11 +128,11 @@
 
   .romantic-card {
     @apply bg-card/80 backdrop-blur-xl border border-border/60 shadow-xl;
-    box-shadow: 0 15px 60px -20px hsl(var(--primary) / 0.35), inset 0 1px 0 hsl(var(--foreground) / 0.08);
+    box-shadow: 0 18px 70px -24px hsl(var(--primary) / 0.4), inset 0 1px 0 hsl(var(--foreground) / 0.08);
   }
 
   .heart-shadow {
-    box-shadow: 0 4px 20px hsl(var(--heart-red) / 0.3);
+    box-shadow: 0 4px 22px hsl(var(--heart-red) / 0.3);
   }
 
   .interactive-card {
@@ -189,12 +193,12 @@
     position: relative;
     height: 1px;
     width: 100%;
-    background: linear-gradient(90deg, transparent, hsl(var(--primary) / 0.8), hsl(var(--accent) / 0.9), transparent);
+    background: linear-gradient(90deg, transparent, hsl(var(--primary) / 0.85), hsl(var(--accent) / 0.9), transparent);
   }
 
   .love-divider::before,
   .love-divider::after {
-    content: "❤";
+    content: "♥";
     position: absolute;
     top: -12px;
     font-size: 14px;
@@ -259,11 +263,11 @@
 
 @layer utilities {
   .font-display {
-    font-family: 'Space Grotesk', 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    font-family: 'Playfair Display', 'DM Sans', 'Plus Jakarta Sans', serif;
   }
 
   .font-body {
-    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    font-family: 'DM Sans', 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
   }
 
   /* Floating hearts animation */
@@ -372,5 +376,15 @@
 
   .animation-delay-1000 {
     animation-delay: 1000ms;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .animate-float-heart,
+    .animate-pulse-love,
+    .animate-fade-in-up,
+    .animate-sparkle,
+    .animate-float-up {
+      animation: none;
+    }
   }
 }

@@ -1,66 +1,62 @@
-import { Heart, Quote } from "lucide-react";
+import { Heart } from "lucide-react";
 
-interface Declaration {
+interface Reason {
   id: number;
-  text: string;
+  title: string;
+  detail: string;
 }
 
-const declarations: Declaration[] = [
+const reasons: Reason[] = [
   {
     id: 1,
-    text: "Desde que você entrou na minha vida, tudo ficou mais colorido. Você é a pessoa que eu sempre sonhei encontrar.",
+    title: "Seu jeito",
+    detail: "Você é intensa, linda, meiga e charmosa. Sua delicadeza me atrai e me conquista!",
   },
   {
     id: 2,
-    text: "Cada momento ao seu lado é um presente. Seu sorriso ilumina meus dias e sua presença aquece meu coração.",
+    title: "Seu sorriso",
+    detail: "Ele ilumina meus dias e me faz lembrar de como sou sortudo.",
   },
   {
     id: 3,
-    text: "Te amo não só pelo que você é, mas pelo que eu me torno quando estou com você. Você me faz querer ser melhor a cada dia.",
-  },
-  {
-    id: 4,
-    text: "Você é minha melhor amiga, minha confidente, meu amor. Não consigo imaginar minha vida sem você.",
-  },
+    title: "Nossa conexão",
+    detail: "Com você as coisas se encaixam de um jeito tão natural e verdadeiro.",
+  }
 ];
 
 const LoveDeclarations = () => {
   return (
-    <section id="declaracoes" className="relative py-20 px-4 bg-secondary/30 overflow-hidden">
+    <section id="motivos" className="relative py-20 px-4 bg-secondary/20 overflow-hidden">
       <div className="absolute inset-0 love-grid opacity-25 pointer-events-none" aria-hidden="true" />
       <div className="love-bubble heart" style={{ top: "6%", left: "10%" }} />
       <div className="love-bubble primary" style={{ bottom: "10%", right: "14%" }} />
 
-      <div className="max-w-4xl mx-auto relative">
+      <div className="max-w-6xl mx-auto relative">
         <div className="absolute right-0 top-12">
           <span className="love-sticker text-sm text-foreground/80">
-            <Quote className="w-4 h-4 text-primary" />
-            Amor em palavras
+            <Heart className="w-4 h-4 text-primary fill-primary/80" />
+            Motivos
           </span>
         </div>
 
-        <div className="text-center mb-16 space-y-3">
-          <div className="flex items-center justify-center gap-3 mb-4">
+        <div className="text-center mb-14 space-y-3">
+          <div className="flex items-center justify-center gap-3 mb-3">
             <Heart className="w-6 h-6 text-heart fill-heart" />
-            <h2 className="font-display text-4xl md:text-5xl font-bold">
-              Declarações de Amor
-            </h2>
+            <h2 className="font-display text-4xl md:text-5xl font-bold">Motivos pelos quais te amo</h2>
             <Heart className="w-6 h-6 text-heart fill-heart" />
           </div>
-          <p className="font-body text-lg text-muted-foreground">
-            Palavras que vêm do coração
+          <p className="font-body text-lg text-muted-foreground max-w-3xl mx-auto">
+            Cada detalhe seu é tiro no meu peito de amor. Aqui estão alguns que fazem meu coração vibrar.
           </p>
           <div className="love-divider" aria-hidden="true" />
         </div>
 
-        <div className="space-y-8">
-          {declarations.map((declaration, index) => (
-            <div
-              key={declaration.id}
-              className={`romantic-card interactive-card rounded-2xl p-8 animate-fade-in-up ${
-                index % 2 === 0 ? "ml-0 mr-0 md:mr-12" : "ml-0 md:ml-12"
-              }`}
-              style={{ animationDelay: `${index * 150}ms` }}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {reasons.map((reason, index) => (
+            <article
+              key={reason.id}
+              className="romantic-card interactive-card rounded-2xl p-6 h-full animate-fade-in-up"
+              style={{ animationDelay: `${index * 120}ms` }}
               onMouseMove={(e) => {
                 const rect = e.currentTarget.getBoundingClientRect();
                 const x = e.clientX - rect.left;
@@ -69,20 +65,14 @@ const LoveDeclarations = () => {
                 e.currentTarget.style.setProperty("--y", `${y}px`);
               }}
             >
-              <div className="flex gap-4">
-                <Quote className="w-8 h-8 text-rose-medium flex-shrink-0 transform rotate-180" />
-                <div>
-                  <p className="font-body text-lg md:text-xl leading-relaxed text-foreground/90">
-                    {declaration.text}
-                  </p>
-                  <div className="flex items-center gap-2 mt-4">
-                    <Heart className="w-4 h-4 text-heart fill-heart animate-pulse-love" />
-                    <Heart className="w-3 h-3 text-rose-medium fill-rose-soft" />
-                    <Heart className="w-2 h-2 text-rose-soft fill-rose-soft" />
-                  </div>
-                </div>
+              <div className="flex items-center gap-3 mb-3">
+                <span className="inline-flex items-center justify-center w-11 h-11 rounded-full bg-gradient-to-br from-primary to-accent text-background shadow-lg shadow-primary/30">
+                  <Heart className="w-5 h-5 fill-background" />
+                </span>
+                <h3 className="font-display text-xl font-semibold">{reason.title}</h3>
               </div>
-            </div>
+              <p className="font-body text-muted-foreground leading-relaxed">{reason.detail}</p>
+            </article>
           ))}
         </div>
       </div>
