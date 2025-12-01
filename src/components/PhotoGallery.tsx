@@ -10,8 +10,12 @@ interface PhotoGalleryProps {
   photos?: Photo[];
 }
 
-// Helper para resolver o caminho correto mesmo em deploy em subpasta
-const asset = (path: string) => new URL(path, import.meta.env.BASE_URL).pathname;
+// Helper para resolver caminho relativo respeitando BASE_URL sem quebrar em prod
+const asset = (path: string) => {
+  const base = import.meta.env.BASE_URL || "/";
+  const trimmedBase = base.endsWith("/") ? base.slice(0, -1) : base;
+  return `${trimmedBase}/${path}`;
+};
 
 // Coloque as fotos aqui:
 // - Preencha o campo `url` com o caminho/URL da imagem (ex.: "/img/foto1.jpg" ou "https://...").
