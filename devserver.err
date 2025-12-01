@@ -848,3 +848,7 @@ Instead of [36m/public/fotos/VID-20210308-WA0046.mp4[33m, use [36m/fotos/VID-
 Instead of [36m/public/8c7e2bc4-3b55-4ae0-ad2c-4fad6960b591.jpg[33m, use [36m/8c7e2bc4-3b55-4ae0-ad2c-4fad6960b591.jpg[33m.[39m
 [33mFiles in the public directory are served at the root path.
 Instead of [36m/public/fotos/958daa7e-20f6-4f49-95c2-9938bd68b167.jpg[33m, use [36m/fotos/958daa7e-20f6-4f49-95c2-9938bd68b167.jpg[33m.[39m
+[33mFiles in the public directory are served at the root path.
+Instead of [36m/public/fotos/VID-20210308-WA0046.mp4[33m, use [36m/fotos/VID-20210308-WA0046.mp4[33m.[39m
+[33mFiles in the public directory are served at the root path.
+Instead of [36m/public/fotos/VID-20210308-WA0046.mp4[33m, use [36m/fotos/VID-20210308-WA0046.mp4[33m.[39m
