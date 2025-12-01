@@ -63,7 +63,7 @@ const HeroSection = ({ name = "Meu Amor" }: HeroSectionProps) => {
           </h1>
           
           <p className="font-body text-lg md:text-xl text-muted-foreground/90 mb-10 animate-fade-in-up animation-delay-400 leading-relaxed max-w-3xl mx-auto">
-            Este lugar agora é o nosso refúgio digital. Onde guardo cada batida
+            Desenvolvi este site para mostrar o quanto te amo. Onde guardo cada batida
             do meu coração, cada lembrança que ilumina nossas noites e tudo o que
             ainda quero viver ao seu lado.
           </p>

@@ -10,13 +10,20 @@ interface PhotoGalleryProps {
   photos?: Photo[];
 }
 
+// Coloque as fotos aqui:
+// - Preencha o campo `url` com o caminho/URL da imagem (ex.: "/img/foto1.jpg" ou "https://...").
+// - Ajuste `caption` para a legenda.
+// - Adicione/remova objetos para controlar quantas fotos aparecem.
 const defaultPhotos: Photo[] = [
-  { id: 1, url: "", caption: "Nosso primeiro encontro" },
-  { id: 2, url: "", caption: "Aquele dia especial" },
-  { id: 3, url: "", caption: "Juntos é melhor" },
-  { id: 4, url: "", caption: "Momentos de felicidade" },
-  { id: 5, url: "", caption: "Nosso lugar favorito" },
-  { id: 6, url: "", caption: "Para sempre" },
+  { id: 1, url: "public/fotos/1e2d98fe-3d0f-40a5-85a0-df78eca3dcdc.jpg", caption: "Primeira viagem juntos" },
+  { id: 2, url: "public/fotos/731BB708-E211-4504-87C5-AA2747CA1E38.jpg", caption: "Um nenem?" },
+  { id: 3, url: "public/fotos/IMG_1759.jpg", caption: "Que fominha!" },
+  { id: 4, url: "public/fotos/IMG_1243.jpg", caption: "Que braveza kk" },
+  { id: 5, url: "public/fotos/IMG_0793.jpg", caption: "Pastelzinho" },
+  { id: 6, url: "public/fotos/9318cb3b-a8ad-46f7-b580-a8db46cfbbad.jpg", caption: "Chocolatinho" },
+  { id: 7, url: "public/fotos/69818b05-27df-4ceb-b003-c616e1090328.jpg", caption: "Lindos" },
+  { id: 8, url: "public/fotos/de956cd8-188f-4b75-b518-5cf60b1c624c.jpg", caption: "Amo" },
+  { id: 9, url: "public/fotos/fa115133-2aff-4bf9-8d2f-9bf8ab49c76c.jpg", caption: "Te amo" },
 ];
 
 const PhotoGallery = ({ photos = defaultPhotos }: PhotoGalleryProps) => {
@@ -81,10 +88,10 @@ const PhotoGallery = ({ photos = defaultPhotos }: PhotoGalleryProps) => {
                 )}
               </div>
               
-              {/* Overlay with caption */}
-              <div className="absolute inset-0 bg-gradient-to-t from-background/85 via-background/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
-                <div className="p-4 w-full">
-                  <p className="font-display text-primary-foreground text-lg italic">
+              {/* Overlay with caption (always visible on mobile; shows on hover in desktop) */}
+              <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/70 to-black/40 backdrop-blur-[2px] opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-300 flex items-end">
+                <div className="w-full p-4 md:p-5 pb-6 max-h-full overflow-y-auto">
+                  <p className="font-display text-white drop-shadow-md text-base md:text-lg leading-snug break-words whitespace-pre-wrap italic">
                     {photo.caption}
                   </p>
                 </div>
