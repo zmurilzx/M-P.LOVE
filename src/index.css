@@ -2,104 +2,104 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Quicksand:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap');
 
 @layer base {
   :root {
-    --background: 350 30% 98%;
-    --foreground: 350 40% 20%;
+    --background: 255 32% 6%;
+    --foreground: 320 35% 96%;
 
-    --card: 350 40% 97%;
-    --card-foreground: 350 40% 20%;
+    --card: 255 30% 10%;
+    --card-foreground: 320 35% 96%;
 
-    --popover: 350 40% 97%;
-    --popover-foreground: 350 40% 20%;
+    --popover: 255 30% 9%;
+    --popover-foreground: 320 35% 96%;
 
-    --primary: 350 80% 60%;
-    --primary-foreground: 0 0% 100%;
+    --primary: 335 85% 63%;
+    --primary-foreground: 255 32% 6%;
 
-    --secondary: 350 30% 92%;
-    --secondary-foreground: 350 40% 25%;
+    --secondary: 250 28% 16%;
+    --secondary-foreground: 320 30% 90%;
 
-    --muted: 350 20% 94%;
-    --muted-foreground: 350 20% 45%;
+    --muted: 255 25% 18%;
+    --muted-foreground: 270 20% 70%;
 
-    --accent: 0 75% 65%;
-    --accent-foreground: 0 0% 100%;
+    --accent: 200 90% 60%;
+    --accent-foreground: 220 30% 10%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 72% 50%;
+    --destructive-foreground: 320 35% 96%;
 
-    --border: 350 30% 88%;
-    --input: 350 30% 88%;
-    --ring: 350 80% 60%;
+    --border: 255 22% 18%;
+    --input: 255 22% 20%;
+    --ring: 335 85% 63%;
 
     --radius: 1rem;
 
     /* Custom romantic colors */
-    --rose-soft: 350 60% 85%;
-    --rose-medium: 350 70% 75%;
-    --rose-deep: 350 80% 55%;
-    --blush: 350 40% 95%;
-    --heart-red: 0 85% 60%;
-    --cream: 40 30% 96%;
-    --gold-soft: 40 60% 70%;
+    --rose-soft: 330 55% 28%;
+    --rose-medium: 330 70% 40%;
+    --rose-deep: 335 80% 55%;
+    --blush: 320 25% 15%;
+    --heart-red: 335 82% 58%;
+    --cream: 45 35% 88%;
+    --gold-soft: 40 90% 58%;
 
     /* Gradients */
-    --gradient-romantic: linear-gradient(135deg, hsl(350 60% 95%), hsl(350 40% 97%), hsl(40 30% 98%));
-    --gradient-heart: linear-gradient(135deg, hsl(350 80% 65%), hsl(0 85% 60%));
-    --gradient-hero: linear-gradient(180deg, hsl(350 50% 96%) 0%, hsl(350 30% 98%) 50%, hsl(40 30% 98%) 100%);
+    --gradient-romantic: linear-gradient(135deg, hsl(255 32% 8%), hsl(280 30% 10%), hsl(320 32% 12%));
+    --gradient-heart: linear-gradient(135deg, hsl(335 85% 63%), hsl(200 90% 60%));
+    --gradient-hero: radial-gradient(circle at 20% 20%, hsl(335 70% 35% / 0.45), transparent 32%), radial-gradient(circle at 80% 10%, hsl(200 90% 45% / 0.35), transparent 32%), linear-gradient(180deg, hsl(255 32% 8%) 0%, hsl(265 28% 8%) 40%, hsl(285 30% 10%) 100%);
 
-    --sidebar-background: 0 0% 98%;
-    --sidebar-foreground: 240 5.3% 26.1%;
-    --sidebar-primary: 240 5.9% 10%;
-    --sidebar-primary-foreground: 0 0% 98%;
-    --sidebar-accent: 240 4.8% 95.9%;
-    --sidebar-accent-foreground: 240 5.9% 10%;
-    --sidebar-border: 220 13% 91%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --sidebar-background: 255 32% 8%;
+    --sidebar-foreground: 320 35% 94%;
+    --sidebar-primary: 335 85% 63%;
+    --sidebar-primary-foreground: 255 32% 6%;
+    --sidebar-accent: 255 24% 12%;
+    --sidebar-accent-foreground: 320 30% 92%;
+    --sidebar-border: 255 22% 18%;
+    --sidebar-ring: 335 85% 63%;
   }
 
   .dark {
-    --background: 350 30% 8%;
-    --foreground: 350 20% 95%;
+    --background: 255 32% 5%;
+    --foreground: 320 35% 96%;
 
-    --card: 350 30% 12%;
-    --card-foreground: 350 20% 95%;
+    --card: 255 30% 9%;
+    --card-foreground: 320 35% 96%;
 
-    --popover: 350 30% 12%;
-    --popover-foreground: 350 20% 95%;
+    --popover: 255 30% 9%;
+    --popover-foreground: 320 35% 96%;
 
-    --primary: 350 75% 65%;
-    --primary-foreground: 350 30% 10%;
+    --primary: 335 85% 60%;
+    --primary-foreground: 255 32% 5%;
 
-    --secondary: 350 25% 18%;
-    --secondary-foreground: 350 20% 90%;
+    --secondary: 250 30% 14%;
+    --secondary-foreground: 320 30% 90%;
 
-    --muted: 350 25% 20%;
-    --muted-foreground: 350 15% 60%;
+    --muted: 255 25% 18%;
+    --muted-foreground: 270 20% 70%;
 
-    --accent: 0 70% 55%;
-    --accent-foreground: 0 0% 100%;
+    --accent: 200 90% 58%;
+    --accent-foreground: 220 30% 10%;
 
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 72% 48%;
+    --destructive-foreground: 320 35% 96%;
 
-    --border: 350 25% 20%;
-    --input: 350 25% 20%;
-    --ring: 350 75% 65%;
+    --border: 255 22% 18%;
+    --input: 255 22% 20%;
+    --ring: 335 85% 60%;
 
-    --rose-soft: 350 40% 25%;
-    --rose-medium: 350 50% 35%;
-    --rose-deep: 350 70% 50%;
-    --blush: 350 30% 15%;
-    --heart-red: 0 70% 50%;
-    --cream: 40 20% 12%;
-    --gold-soft: 40 50% 50%;
+    --rose-soft: 330 55% 26%;
+    --rose-medium: 330 70% 38%;
+    --rose-deep: 335 80% 54%;
+    --blush: 320 25% 12%;
+    --heart-red: 335 82% 55%;
+    --cream: 45 35% 86%;
+    --gold-soft: 40 90% 55%;
 
-    --gradient-romantic: linear-gradient(135deg, hsl(350 30% 12%), hsl(350 25% 10%), hsl(40 20% 10%));
-    --gradient-heart: linear-gradient(135deg, hsl(350 70% 50%), hsl(0 70% 50%));
-    --gradient-hero: linear-gradient(180deg, hsl(350 30% 10%) 0%, hsl(350 25% 8%) 50%, hsl(40 20% 8%) 100%);
+    --gradient-romantic: linear-gradient(135deg, hsl(255 32% 7%), hsl(280 30% 9%), hsl(320 32% 11%));
+    --gradient-heart: linear-gradient(135deg, hsl(335 85% 60%), hsl(200 90% 58%));
+    --gradient-hero: radial-gradient(circle at 15% 25%, hsl(335 70% 32% / 0.45), transparent 30%), radial-gradient(circle at 80% 15%, hsl(200 90% 42% / 0.35), transparent 32%), linear-gradient(180deg, hsl(255 32% 7%) 0%, hsl(265 28% 8%) 40%, hsl(285 30% 10%) 100%);
   }
 }
 
@@ -111,6 +111,7 @@
   body {
     @apply bg-background text-foreground font-body antialiased;
     background: var(--gradient-romantic);
+    color-scheme: dark;
     min-height: 100vh;
   }
 }
@@ -122,22 +123,147 @@
   }
 
   .romantic-card {
-    @apply bg-card/80 backdrop-blur-sm border border-border/50 shadow-lg;
-    box-shadow: 0 10px 40px -10px hsl(var(--primary) / 0.15);
+    @apply bg-card/80 backdrop-blur-xl border border-border/60 shadow-xl;
+    box-shadow: 0 15px 60px -20px hsl(var(--primary) / 0.35), inset 0 1px 0 hsl(var(--foreground) / 0.08);
   }
 
   .heart-shadow {
     box-shadow: 0 4px 20px hsl(var(--heart-red) / 0.3);
   }
+
+  .interactive-card {
+    position: relative;
+    transition: transform 0.4s ease, box-shadow 0.4s ease, border-color 0.4s ease;
+    will-change: transform;
+  }
+
+  .interactive-card::before {
+    content: "";
+    position: absolute;
+    inset: -1px;
+    border-radius: inherit;
+    background: radial-gradient(220px circle at var(--x, 50%) var(--y, 50%), hsl(var(--accent) / 0.35), transparent 65%);
+    opacity: 0;
+    transition: opacity 0.35s ease;
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  .interactive-card::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    background: linear-gradient(120deg, hsl(var(--primary) / 0.18), transparent 40%, hsl(var(--accent) / 0.18));
+    opacity: 0;
+    transition: opacity 0.35s ease;
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  .interactive-card:hover {
+    transform: translateY(-6px) scale(1.01);
+    box-shadow: 0 22px 70px -30px hsl(var(--primary) / 0.55), 0 10px 30px -16px hsl(var(--accent) / 0.45);
+    border-color: hsl(var(--primary) / 0.6);
+  }
+
+  .interactive-card:hover::before,
+  .interactive-card:hover::after {
+    opacity: 1;
+  }
+
+  .love-grid {
+    background-image:
+      radial-gradient(220px circle at 20% 20%, hsl(var(--primary) / 0.12), transparent 55%),
+      radial-gradient(180px circle at 80% 10%, hsl(var(--accent) / 0.12), transparent 60%),
+      radial-gradient(300px circle at 60% 80%, hsl(var(--rose-deep) / 0.12), transparent 60%),
+      radial-gradient(4px 4px at 12% 30%, hsl(var(--heart-red) / 0.4), transparent 65%),
+      radial-gradient(5px 5px at 86% 62%, hsl(var(--accent) / 0.45), transparent 65%),
+      radial-gradient(4px 4px at 34% 74%, hsl(var(--primary) / 0.45), transparent 65%);
+    background-size: 420px 420px, 420px 420px, 480px 480px, 160px 160px, 200px 200px, 180px 180px;
+    background-repeat: repeat;
+    opacity: 0.6;
+  }
+
+  .love-divider {
+    position: relative;
+    height: 1px;
+    width: 100%;
+    background: linear-gradient(90deg, transparent, hsl(var(--primary) / 0.8), hsl(var(--accent) / 0.9), transparent);
+  }
+
+  .love-divider::before,
+  .love-divider::after {
+    content: "❤";
+    position: absolute;
+    top: -12px;
+    font-size: 14px;
+    color: hsl(var(--heart-red));
+    text-shadow: 0 0 12px hsl(var(--heart-red) / 0.5);
+  }
+
+  .love-divider::before {
+    left: 18%;
+  }
+
+  .love-divider::after {
+    right: 18%;
+  }
+
+  .love-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    padding: 0.55rem 0.95rem;
+    border-radius: 9999px;
+    background: linear-gradient(120deg, hsl(var(--primary) / 0.2), hsl(var(--accent) / 0.16));
+    border: 1px solid hsl(var(--primary) / 0.35);
+    box-shadow: 0 10px 30px -18px hsl(var(--accent) / 0.4);
+    backdrop-filter: blur(8px);
+  }
+
+  .love-bubble {
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    border-radius: 9999px;
+    filter: blur(28px);
+    opacity: 0.35;
+    pointer-events: none;
+    mix-blend-mode: screen;
+  }
+
+  .love-bubble.primary {
+    background: radial-gradient(circle at center, hsl(var(--primary) / 0.65), transparent 60%);
+  }
+
+  .love-bubble.accent {
+    background: radial-gradient(circle at center, hsl(var(--accent) / 0.6), transparent 60%);
+  }
+
+  .love-bubble.heart {
+    background: radial-gradient(circle at center, hsl(var(--heart-red) / 0.55), transparent 60%);
+  }
+
+  .love-sticker {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.5rem 0.9rem;
+    border-radius: 9999px;
+    background: hsl(var(--card) / 0.9);
+    border: 1px solid hsl(var(--border));
+    box-shadow: 0 8px 24px -14px hsl(var(--primary) / 0.4);
+  }
 }
 
 @layer utilities {
   .font-display {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Space Grotesk', 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
   }
 
   .font-body {
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
   }
 
   /* Floating hearts animation */

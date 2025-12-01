@@ -14,8 +14,8 @@ export default {
     },
     extend: {
       fontFamily: {
-        display: ['Playfair Display', 'serif'],
-        body: ['Quicksand', 'sans-serif'],
+        display: ['Space Grotesk', 'Plus Jakarta Sans', 'sans-serif'],
+        body: ['Plus Jakarta Sans', 'sans-serif'],
       },
       colors: {
         border: "hsl(var(--border))",
